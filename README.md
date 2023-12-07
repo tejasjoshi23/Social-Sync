@@ -3,7 +3,7 @@
 SocialSync is a full-stack MERN (MongoDB, Express.js, React, Node.js) application that provides a platform for users to share photos, connect with others, and engage in a social network experience.
 
 ## Features
-User Authentication: Secure sign-up, login, and logout functionality using JSON Web Tokens (JWT).
+User Authentication: Secure sign-up, login, and logout functionality using JSON Web Tokens (JWT). \\
 Photo Management: Users can upload, view, and manage their photos. Photos are stored on Cloudinary, and MongoDB stores the photo URLs.
 Social Interaction: Like photos, leave comments, follow/unfollow other users, and see following posts.
 Profile Management: Update, change, or remove the profile picture. View user profiles.
