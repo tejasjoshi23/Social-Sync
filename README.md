@@ -3,25 +3,25 @@
 SocialSync is a full-stack MERN (MongoDB, Express.js, React, Node.js) application that provides a platform for users to share photos, connect with others, and engage in a social network experience.
 
 ## Features
-User Authentication: Secure sign-up, login, and logout functionality using JSON Web Tokens (JWT). \\
-Photo Management: Users can upload, view, and manage their photos. Photos are stored on Cloudinary, and MongoDB stores the photo URLs.
-Social Interaction: Like photos, leave comments, follow/unfollow other users, and see following posts.
-Profile Management: Update, change, or remove the profile picture. View user profiles.
-Security Features: Passwords are hashed using bcrypt for enhanced security.
+  User Authentication: Secure sign-up, login, and logout functionality using JSON Web Tokens (JWT). \\
+  Photo Management: Users can upload, view, and manage their photos. Photos are stored on Cloudinary, and MongoDB stores the photo URLs.
+  Social Interaction: Like photos, leave comments, follow/unfollow other users, and see following posts.
+  Profile Management: Update, change, or remove the profile picture. View user profiles.
+  Security Features: Passwords are hashed using bcrypt for enhanced security.
 
 ## Technologies Used
-Frontend: React
-Backend: Node.js, Express.js
-Database: MongoDB
-Authentication: JSON Web Tokens (JWT), bcrypt for password hashing
-Photo Storage: Cloudinary
-Validation: Regex for email and password validity
-Notifications: React-Toastify
+   Frontend: React
+   Backend: Node.js, Express.js
+   Database: MongoDB
+   Authentication: JSON Web Tokens (JWT), bcrypt for password hashing
+   Photo Storage: Cloudinary
+   Validation: Regex for email and password validity
+   Notifications: React-Toastify
 
 ### Prerequisites
 
-- Node.js and npm installed on your machine.
-- MongoDB installed locally or configured connection to a MongoDB instance.
+  - Node.js and npm installed on your machine.
+  - MongoDB installed locally or configured connection to a MongoDB instance.
 
 
 ### Installation
