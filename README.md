@@ -1,4 +1,3 @@
-editting
 # Social-Sync
 SocialSync is a full-stack MERN (MongoDB, Express.js, React, Node.js) application that provides a platform for users to share photos, connect with others, and engage in a social network experience.
 
