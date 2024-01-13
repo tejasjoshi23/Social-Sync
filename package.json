@@ -17,7 +17,13 @@
     "mongoose": "^7.6.3",
     "nodemon": "^3.0.1"
   },
+<<<<<<< HEAD
   "devDependencies": {},
   "keywords": [],
   "description": ""
+=======
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+>>>>>>> a14a89ab674db4d6d99e8e23b4704eb1584cc0b9
 }
