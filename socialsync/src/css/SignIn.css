@@ -1,62 +1,89 @@
-.signIn{
-    background-image: url(https://pbs.twimg.com/media/FUJ8dDrXEAIGk3o.jpg:large);
-    background-size: cover;
-    /* 26 min if we have to add bg image*/
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.signIn {
+  background-image: url(https://pbs.twimg.com/media/FUJ8dDrXEAIGk3o.jpg:large);
+  background-size: cover;
+  background-repeat: repeat-y;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loginform {
-    background-color: rgba(255, 255, 255, 0.356);
-    padding:60px;
-    border: 1px solid rgb(129, 121, 121);
-    border-radius: 1px;
-    margin: 10px;
+  background-color: rgba(255, 255, 255, 0.356);
+  padding: 60px;
+  border-radius: 30px;
+  margin: 10px;
 }
 
 .signinlogo {
-width: 250px;
-object-fit: contain;
-padding: 1px 1px;
-margin-bottom: 20px;
+  width: 250px;
+  object-fit: contain;
+  padding: 1px 1px;
+  margin-bottom: 20px;
+transition-duration: 400ms;
+}
+.signinlogo:hover {
+  transform: scale(1.1);
+    transition: 1s ease;
 }
 
 input {
-    padding: 10px;
-    margin: 3px 0px;
-    outline: none;
-    font-size: 15px;
-    width: 100%;
-    border-radius: 3px;
-    box-sizing:border-box;
-  }
+  padding: 12px 28px;
+  margin: 6px 0px;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
 
- #login-btn {
-background-color: rgb(0, 93, 193);
-border: none;
-border-radius: 3px;
-color: white;
-font-size: 15px;
-font-weight: bold;
-padding: 10px;
-width: 100%;
-cursor: pointer;
-margin-top:12px;
- }
+#login-btn {
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 12px;
+  background-image: linear-gradient(
+    to right,
+    #e70000 0%,
+    #ed8600 51%,
+    #ff0b64 100%
+  );
+  transition: 0.4s;
+  background-size: 200% auto;
+  border-radius: 50px;
+}
 
- .loginform2 {
-    font-size: 16px;
-    background-color: rgba(255, 255, 255, 0.356);
-     padding:15px;
-    border: 1px solid rgb(161, 161, 161);
-    border-radius: 3px;
-    margin: 20px 10px 10px 10px;
-  }
+#login-btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
 
- .signup {
-    color: rgb(14, 124, 241);
-    cursor: pointer;
-   font-size: 16px;
- }
+.loginform2 {
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.356);
+  padding: 15px;
+  border-radius: 20px;
+  margin: 20px 10px 10px 10px;
+}
+
+.signup {
+  color: rgb(10, 149, 255);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition-duration: 1s;
+}
+.signup a{
+  text-decoration: none;
+}  
+.signup:hover {
+  font-size: 17px;
+  color: rgb(13, 104, 201);
+  transition-duration: 1s;
+}

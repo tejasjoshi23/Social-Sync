@@ -1,124 +1,144 @@
+.home {
+  background-image: linear-gradient(
+    90.7deg,
+    rgba(249, 21, 215, 1) 1.1%,
+    rgba(22, 0, 98, 1) 99%
+  );
+}
 .card {
-    max-width:  500px;
-    height:   max-content;
-    margin : 25px auto;
-    border: 1px solid rgb(173, 173, 173);
-    border-radius: 5px;
+  max-width: 500px;
+  height: max-content;
+  margin: 25px auto;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 15px;
+  padding: 20px;
+  background-color: white;
 }
 
 .card-header {
-    display: flex;   
+  display: flex;
+  margin: 0;
+  padding-bottom: 10px;
 }
-.card-header > h5 {
-    margin: 0;
-    padding: 11px;
+.card-header h5 a {
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 10px;
+  color: black;
+}
+.card-header h5:hover {
+  text-decoration: underline;
+  transition-duration: 600ms;
+  translate: 0 -2px;
 }
 
 .card-pic img {
-    width: 30px;
-    border-radius: 30px;
-    height: auto;
-    object-fit: contain;
-    padding: 5px;
+  width: 30px;
+  border-radius: 30px;
+  height: auto;
+  object-fit: contain;
 }
 
 .card-image img {
-    width: 95% ;
+  width: 95%;
 }
 
 .card-content {
-    text-align: left;
-    line-height: 5px;
-    padding: 3px 10px;
-    border-bottom: 1px solid rgb(173, 173, 173) ;
+  text-align: left;
+  line-height: 8px;
+  padding: 3px 10px;
 }
-
+.card-content .likeNumber {
+  margin-top: 10px;
+}
 .add-comment {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-.add-comment input{
-    margin: 0;
-    outline: none;
-    border: none;
-    padding: 15px;
-
+.add-comment input {
+  margin: 0;
+  outline: none;
+  border: none;
+  padding: 15px;
 }
 
 .comment {
-    border: none;
-    background-color: none;
-    font-weight: bolder;
-    cursor: pointer;
-    color: #2389cd;
-    padding: 15px 5px;
+  border: none;
+  background-color: none;
+  font-weight: bolder;
+  cursor: pointer;
+  color: #2389cd;
+  padding: 15px 5px;
 }
-.material-symbols-outlined-red{
-    color : rgb(247, 38, 121);
-    font-variation-settings :
-    'FILL' 1,
-    'wght'700,
-    'GRAD' 0,
-    'opsz' 48
+.comment:disabled {
+  background-color: #2389cd;
+  color: #ffffff;
+  cursor: not-allowed;
+  opacity: 0.6;
 }
-.material-symbols-outlined{
-    cursor: pointer;
+.material-symbols-outlined-red {
+  color: rgb(247, 38, 121);
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 48;
 }
-
-.showComment{
-    width: 100vw;
-    min-height:100vh ;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(16, 13, 13, 0.4);
- }
-
-.container{
-    display: flex;
-    /* display: table-column;    */
-    width: 80%;
-    background-color: white;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    height: 500px;
-}
-.postPic{
-    background-color: rgb(168, 210, 181);
-    display: flex;
-    align-items: center;
-}
-.postPic img{
-    object-fit: contain;
-    width: 98%;
-}
-.details{
-    width: 100%;
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-}
-.comment-section{
-    flex-grow: 4;
-    text-align: left;
-    margin-left: 10px;
-}
-.close-comment{
-    position: fixed;
-    top: 1%;
-    right: 5%;
-    color: white;
-    border: none;
-    cursor: pointer;
+.material-symbols-outlined {
+  cursor: pointer;
 }
 
+.showComment {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(16, 13, 13, 0.4);
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  background-color: white;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 500px;
+}
+.postPic {
+  background-color: rgb(168, 210, 181);
+  display: flex;
+  align-items: center;
+}
+.postPic img {
+  object-fit: contain;
+  width: 98%;
+}
+.details {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.comment-section {
+  flex-grow: 4;
+  text-align: left;
+  margin-left: 10px;
+}
+.close-comment {
+  position: fixed;
+  top: 1%;
+  right: 5%;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
 .material-symbols-outlined-comment {
-    font-size: 50px;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 9000,
-  'GRAD' 0,
-  'opsz' 48
+  font-size: 50px;
+  font-variation-settings: "FILL" 0, "wght" 9000, "GRAD" 0, "opsz" 48;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }

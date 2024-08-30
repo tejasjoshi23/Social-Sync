@@ -30,7 +30,7 @@ const notifyB =(msg)=> toast.success(msg)
         },
       }).then(res=>res.json())
       .then(result =>{
-        console.log(result);
+        // console.log(result);
 
         setData(result)})
       
@@ -69,7 +69,7 @@ const notifyB =(msg)=> toast.success(msg)
           }
         })
         setData(newData)
-        console.log(result);
+        // console.log(result);
       })
   }
 
@@ -94,7 +94,7 @@ const notifyB =(msg)=> toast.success(msg)
         }
       });
       setData(newData);
-      console.log(result);
+      // console.log(result);
      });
 };
 
@@ -122,7 +122,7 @@ const makeComment =(text,id)=>{
     setData(newData);
       setComment("");
       notifyB("Your comment is posted.")
-      console.log(result);
+      // console.log(result);
     });
  };
 

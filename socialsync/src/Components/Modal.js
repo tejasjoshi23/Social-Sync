@@ -13,8 +13,8 @@ export default function Modal({setModalOpen}) {
                 <div className="modalHeader">
                     <h5 className=''>Comfirm</h5>
                 </div>
-                <button className='closeBtn' onClick={()=> setModalOpen(false)}>
-                    <RiCloseLine></RiCloseLine>
+                <button className='closeBtn' onClick={()=> setModalOpen(false)}>X
+                    {/* <RiCloseLine></RiCloseLine> */}
                 </button>
                 {/* modal content */}
                 <div className="modalContent">

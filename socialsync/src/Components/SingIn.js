@@ -38,14 +38,14 @@ const emailRegex= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
             if(data.error){
                 notifyA(data.error)
             } else {
-                notifyB(" signed in successfully bro")
-                console.log(data)
+                notifyB(`Welcome, ${data.user.name} !`)
+                // console.log(data)
                 localStorage.setItem("jwt", data.token)
                 localStorage.setItem("user", JSON.stringify(data.user))
                 setUserLogin(true)
                 navigate('/')
             }
-            console.log(data)
+            // console.log(data)
         })
      }
    return (
@@ -55,11 +55,11 @@ const emailRegex= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     <div className='loginform'>
         <img className='signinlogo' src={textlogo} alt ='logo'></img>
               <div>
-              <input type='email' name ='email' id = 'email' value ={email} placeholder='E-mail' onChange={(e)=>{setEmail(e.target.value)}}/>
+              <input type='email' name ='email' id = 'email' value ={email} placeholder='E-mail (test@gmail.com)' onChange={(e)=>{setEmail(e.target.value)}}/>
             </div>
 
             <div>
-            <input type='password' name ='password' id = 'password' value={password} placeholder='Password' onChange={((e)=>{setPassword(e.target.value)})}/>
+            <input type='password' name ='password' id = 'password' value={password} placeholder='Password (Test@123)con' onChange={((e)=>{setPassword(e.target.value)})}/>
             </div>
  
 

@@ -1,39 +1,107 @@
+.createPostContainer {
+  min-height: 87.7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+
+}
+
+
 .createPost {
-    max-width: 500px;
-    margin: 10px auto;
-    /* border: 1px solid rgb(173,173,173); */
-    border-radius: 5px;
-    background-color:rgb(245, 245, 245) ;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 40px;
+  background-color: rgba(228, 228, 228, 0.155);
 }
 
-.main-div {
-    border-top: 1px solid rgb(173,173,173);
-}
 .post-header {
-    display: flex;
+  display: flex;
+  margin-bottom: 10px;
+  color: white;
 }
+
 #post-btn {
-    border : none;
-    color : rgb(56, 120, 247);
-    background:none ;
-    cursor: pointer;
-    font-weight: bolder;
-}
-.details {
-    border-top: 1px solid rgb(173,173,173);
-}
-
-textarea{
-    width: 90%;
-    border: none;
-    outline: none;
+  border: none;
+  color: #0f0c29;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bolder;
 }
 
-#output{
-    width: 300px;
-    border: none;
-    outline: none;
-    padding: 10px;
+.user-img-name > * {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.pic-username {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+.text-comment{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #fbfbfb21;
+  color: white;
+}
+
+#output {
+  width: 300px;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
 
 
+#post-btn {
+  border: none;
+  color: #0f0c29;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bolder;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#post-btn:hover {
+  background-color: #e6e6e6;
+}
+
+#post-btn:active {
+  transform: scale(0.98);
+}
+
+#post-btn:focus {
+  background-color: #d1d1d1;
+}
+
+.progress-info {
+  color: white;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 4px;
 }

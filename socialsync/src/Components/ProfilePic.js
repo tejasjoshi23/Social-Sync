@@ -18,7 +18,7 @@ const postDetails = ()=>{
     .then (res =>res.json())
     .then(data => setUrl(data.url))
     .catch(err => console.log(err)) ;
-    console.log(url);  
+    // console.log(url);  
 }
 
   const postPic = () => {
@@ -35,7 +35,7 @@ const postDetails = ()=>{
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         changeprofile();
         window.location.reload();
       })

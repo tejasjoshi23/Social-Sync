@@ -1,5 +1,5 @@
  //function based component
-import React,{createContext, useState} from 'react';
+import React,{useState} from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -10,7 +10,6 @@ import Profile from './Components/Profile';
 import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Createpost from './Components/Createpost';
-import { useContext } from 'react';
 import { LoginContext } from './context/LoginContext';
 import Modal from "./Components/Modal";
 import UserProfile from './Components/UserProfile';
@@ -39,7 +38,6 @@ import MyFollowingPost from './Components/myFollowingPost'
           {modalOpen&& <Modal setModalOpen={setModalOpen}></Modal>}
       </LoginContext.Provider>
     </div>
-
     </BrowserRouter>
    )
 }
