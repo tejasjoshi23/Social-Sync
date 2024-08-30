@@ -59,7 +59,7 @@ const emailRegex= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
             </div>
 
             <div>
-            <input type='password' name ='password' id = 'password' value={password} placeholder='Password (Test@123)con' onChange={((e)=>{setPassword(e.target.value)})}/>
+            <input type='password' name ='password' id = 'password' value={password} placeholder='Password (Test@123)' onChange={((e)=>{setPassword(e.target.value)})}/>
             </div>
  
 
